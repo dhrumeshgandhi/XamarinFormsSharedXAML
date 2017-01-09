@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="XFSX_Test_1.MainPage">
+  <TabbedPage.Children>
+    <ContentPage Title="Login"
+                 x:Name ="cpLogin">
+      <StackLayout Spacing="20"
+                   Padding="20"
+              VerticalOptions="Center">
+        <Entry Placeholder ="Username"
+               x:Name="txtLoginUsername"/>
+        <Entry Placeholder ="Password"
+               x:Name="txtLoginPassword"
+               IsPassword="true"/>
+        <Button Text ="Login"
+                x:Name="btnLogin"/>
+        <Label Text ="Not Register?"
+                x:Name="lblNotRegistered"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+      </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Register"
+                 x:Name ="cpRegister">
+      <StackLayout Spacing="20"
+                   Padding="20"
+              VerticalOptions="Center">
+        <Entry Placeholder ="Username"
+               x:Name="txtRegisterUsername"/>
+        <Entry Placeholder ="Password"
+               x:Name="txtRegisterPassword"
+               IsPassword="true"/>
+        <Entry Placeholder ="Confirm Password"
+               x:Name="txtRegisterConfirmPassword"
+               IsPassword="true"/>
+        <Entry Placeholder ="First Name"
+               x:Name="txtRegisterFirstName"/>
+        <Entry Placeholder ="Last Name"
+               x:Name="txtRegisterLastName"/>
+        <Button Text ="Register"
+                x:Name="btnRegister"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+      </StackLayout>
+    </ContentPage>
+  </TabbedPage.Children>
+</TabbedPage>
